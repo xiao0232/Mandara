@@ -1,0 +1,26 @@
+.mandaraContainer {
+  height: 900px;
+}
+
+.svgMandara {
+  width: 700px;
+  height: 700px;
+  pointer-events: none;
+  margin: 50px;
+  filter: drop-shadow(30px 10px 4px #000000);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .svgMandara {
+    animation: svgSpin infinite 20s linear;
+  }
+}
+
+@keyframes svgSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
